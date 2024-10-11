@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Primary font for body */
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6; /* Improved readability */
+}
+
+header {
+    background: #002147; /* Dark navy header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img.profile-image {
+    width: 120px; /* Adjust as needed */
+    height: 120px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space below the image */
+    border: 4px solid transparent; /* Transparent border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 5px; /* Padding inside the border */
+    background: linear-gradient(135deg, #FF6F61, #FFFAF0); /* Gradient background */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif; /* Font for the header */
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FF6F61; /* Change color on hover */
+}
+
+section {
+    padding: 30px; /* Increased padding */
+    margin: 10px 0;
+    background: white; /* White background for sections */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #FF6F61; /* Soft coral for section headers */
+    border-bottom: 2px solid #002147; /* Border in navy */
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif; /* Font for section headers */
+    font-size: 1.5em; /* Increased header size */
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #FFFAF0; /* Light cream background for project cards */
+    padding: 15px;
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth scale and shadow effect */
+}
+
+.project-card:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2em; /* Increased font size for project titles */
+}
+
+.project-card p {
+    margin: 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #FF6F61; /* Coral for skill badges */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.skills-list li:hover {
+    background: #FF4C4C; /* Darker coral on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s; /* Smooth border color transition */
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid #FF6F61; /* Highlight border on focus */
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #FF6F61; /* Button color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+form button:hover {
+    background: #FF4C4C; /* Darker coral on hover */
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p a {
+    color: #FF6F61; /* Coral color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.contact-info p a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #FF4C4C; /* Darker coral on hover */
+}
+
+footer {
+    background: #002147; /* Dark navy footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
